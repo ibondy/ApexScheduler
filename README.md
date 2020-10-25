@@ -1,5 +1,5 @@
 # ApexScheduler
-Small service enabling schduling of Netune Apex Trident. 
+Small service enabling schduling of Neptune Apex Trident. 
 
 ### Service installation
 Copy files to from https://github.com/ibondy/ApexScheduler/releases/tag/1.0 to the local folder. (i.e. c:\apexscheduler) Modify settings.json with your Apex values
