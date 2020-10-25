@@ -2,7 +2,7 @@
 Small service enabling schduling of Netune Apex Trident. 
 
 ### Service installation
-Copy files to from https://github.com/ibondy/ApexLoader/releases/tag/1.0 to the local folder. (i.e. c:\apexloader) Modify settings.json with your Apex values
+Copy files to from https://github.com/ibondy/ApexScheduler/releases/tag/1.0 to the local folder. (i.e. c:\apexscheduler) Modify settings.json with your Apex values
 
 Adjust configuration file with your values
 
