@@ -89,7 +89,7 @@
             }
 
             var baseUri = string.Format($" {_apexConfig.Url}:{_apexConfig.Port}");
-            var uri = string.Format($"{baseUri}/rest/status/outputs/{_apexConfig.AllTestsApexCommand.gid}");
+            var uri = string.Format($"{baseUri}/rest/status/outputs/{_apexConfig.AllTestsApexCommand.did}");
             var cmd = JsonSerializer.Serialize(_apexConfig.AllTestsApexCommand);
             var payload = new StringContent(cmd);
 

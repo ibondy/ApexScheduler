@@ -50,6 +50,7 @@ namespace ApexScheduler
                     {
                         logging.AddConsole();
                         logging.AddDebug();
+                        logging.AddEventLog();
                     }
 
                     logging.AddEventLog(new EventLogSettings()
@@ -79,7 +80,7 @@ namespace ApexScheduler
                 gid = "",
                 type = "selector",
                 ID = Convert.ToInt32(config["Apex1:AlkTest:ID"]),
-                did = config["Apex1:AlkTest.Did"]
+                did = config["Apex1:AlkTest:Did"]
             };
 
             apexConfigs.Apex1.AllTestsApexCommand = new ApexCommand
@@ -88,8 +89,8 @@ namespace ApexScheduler
                 name = config["Apex1:AllTests:Name"],
                 gid = "",
                 type = "selector",
-                ID = Convert.ToInt32(config["Apex1:AlsTests:ID"]),
-                did = config["Apex1:AllTests.Did"]
+                ID = Convert.ToInt32(config["Apex1:AllTests:ID"]),
+                did = config["Apex1:AllTests:Did"]
             };
 
             apexConfigs.Apex2.Name = config["Apex2:Name"];
