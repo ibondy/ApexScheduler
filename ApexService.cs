@@ -50,6 +50,10 @@
                     _cookieDelegateHandler.AccessCookie = result.Headers.First(p => p.Key == "Set-Cookie").Value.First();
                 }
             }
+            else
+            {
+                _logger.LogWarning($"Login into Apex not successfull, status code:{result.StatusCode} - {DateTime.Now.ToShortTimeString()}");
+            }
         }
 
         /// <summary>
@@ -79,6 +83,10 @@
             {
                 _logger.LogInformation($"ALK test scheduled with Apex successfully {DateTime.Now.ToShortTimeString()}");
             }
+            else
+            {
+                _logger.LogWarning($"ALK test not successfull, status code:{result.StatusCode} -{DateTime.Now.ToShortTimeString()}");
+            }
         }
 
         public async Task RequestAllTests()
@@ -97,6 +105,10 @@
             if (result.IsSuccessStatusCode)
             {
                 _logger.LogInformation($"ALK-CA-MG test scheduled with Apex successfully {DateTime.Now.ToShortTimeString()}");
+            }
+            else
+            {
+                _logger.LogWarning($"ALK-CA-MG test not successfull, status code:{result.StatusCode} -{DateTime.Now.ToShortTimeString()}");
             }
         }
     }
